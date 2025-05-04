@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background-color: cornsilk;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #212121;
+}
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: burlywood;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input__container {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact__input {
+  padding: 5px 15px;
+  margin: 5px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: cornsilk;
+  outline: 1px solid grey;
+  transition: outline 100ms ease-in-out;
+}
+.contact__input:focus {
+  outline: 1px solid #2c8ce6;
+}
+.contact__btn {
+  padding: 7px 20px;
+  border: 1px solid #1b5891;
+  border-radius: 10px;
+  background-color:#2c8ce6;
+  font-size: 16px;
+  transition: border 150ms ease-in-out, background-color 150ms ease-in-out, transform 250ms ease-in-out;
+  margin-bottom: 30px;
+}
+.contact__btn:hover {
+  border: 1px solid grey;
+  background-color: cornsilk;
+}
+.contact__btn:active {
+  transform: scale(0.9);
+}
+.contact__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  border: 1px solid grey;
+  background-color: cornsilk;
+  border-radius: 10px;
+  padding: 10px 30px;
+  align-items: center;
+}
+.contact-text__box {
+  display: flex;
+  flex-direction: column;
+}
+.contact__tel {
+  font-size: 14px;
+  margin-top: 20px;
+  color:rgb(61, 61, 61);
+}
+.contact__email {
+  font-size: 14px;
+  margin-top: 5px;
+  color:rgb(61, 61, 61);
+}
+.contact-btn__box {
+  display: flex;
+  gap: 10px;
+}
+.contact-del__btn, .contact-edit__btn {
+  padding: 15px 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #1b5891;
+  background-color: #2c8ce6;
+  transition: border 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+.contact-del__btn:hover, .contact-edit__btn:hover {
+  border: 1px solid grey;
+  background-color: cornsilk;
+}
